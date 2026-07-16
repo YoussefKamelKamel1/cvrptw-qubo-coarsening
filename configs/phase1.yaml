@@ -1,0 +1,40 @@
+# Phase-1 reproduction config: heuristic-coarsening CVRPTW baseline on the SA simulator.
+# Every number in the Phase-1 results is regenerable from this file + the seeds.
+
+instances:            # 3 per family (C1/C2/R1/R2/RC1/RC2)
+  - C101
+  - C102
+  - C103
+  - C201
+  - C202
+  - C203
+  - R101
+  - R102
+  - R103
+  - R201
+  - R202
+  - R203
+  - RC101
+  - RC102
+  - RC103
+  - RC201
+  - RC202
+  - RC203
+
+Ns: [5, 10]           # quantum tier: first-N customers
+seeds: [0, 1, 2]      # >=3 seeds (SA is stochastic); report mean +/- spread
+
+solver:
+  backend: sa         # dwave-samplers SimulatedAnnealingSampler (modern neal)
+  num_reads: 1000     # fixed, logged budget held constant across all conditions
+  num_sweeps: 1000
+
+# Phase-1 uses the static penalty hierarchy (predecessor defaults).
+penalties:
+  only_one: 10000000
+  capacity_penalty: 5000000
+  time_window_penalty: 3000000
+  vehicle_start_cost: 100000
+  order: 100
+
+output: results/phase1_results.csv

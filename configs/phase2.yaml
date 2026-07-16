@@ -1,0 +1,34 @@
+# Phase-2 ablation config: static vs adaptive penalty calibration at EQUAL budget.
+# Adaptive = objective-scaled penalties + capacity-aware slack (drop non-binding
+# capacity constraints, tighten slack bits). The budget is deliberately moderate
+# so SA is stressed enough for the conditioning difference to show.
+
+instances:
+  - C101
+  - C102
+  - C103
+  - C201
+  - C202
+  - C203
+  - R101
+  - R102
+  - R103
+  - R201
+  - R202
+  - R203
+  - RC101
+  - RC102
+  - RC103
+  - RC201
+  - RC202
+  - RC203
+
+Ns: [5, 10]
+seeds: [0, 1, 2]
+
+solver:
+  backend: sa
+  num_reads: 200      # equal budget for both arms
+  num_sweeps: 200
+
+output: results/phase2_ablation.csv

@@ -1,0 +1,31 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+.claude/
+reference/
+Papers/
+docs/
+documentation/
+report/
+paper/
+notebook.ipynb
+*.zip
+
+# internal notes / drafts; keep only the top-level README
+*.md
+!/README.md
+
+# figure / notebook tooling (target the write-up, not the pipeline)
+scripts/make_*.py
+scripts/build_notebook.py
+
+# regenerable outputs; keep only the trained coarsening policy
+results/*
+!results/gnn_model_rl.pt
+
+*.log
+.DS_Store
+.vscode/
+.idea/

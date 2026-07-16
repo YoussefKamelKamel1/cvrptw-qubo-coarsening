@@ -1,0 +1,18 @@
+numpy<2
+pandas
+scipy
+matplotlib
+networkx
+tqdm
+pyyaml
+
+# QUBO / simulated-annealing backend
+dimod==0.12.22
+dwave-samplers==1.8.0
+
+# classical reference solver (CP-SAT)
+ortools==9.12.4544
+
+# graph neural network (install a torch build matching your CUDA/CPU first)
+torch==2.2.2
+torch-geometric==2.8.0
