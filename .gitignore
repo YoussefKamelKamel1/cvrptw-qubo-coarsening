@@ -3,25 +3,7 @@ __pycache__/
 *.egg-info/
 .ipynb_checkpoints/
 
-.claude/
-reference/
-Papers/
-docs/
-documentation/
-report/
-paper/
-notebook.ipynb
-*.zip
-
-# internal notes / drafts; keep only the top-level README
-*.md
-!/README.md
-
-# figure / notebook tooling (target the write-up, not the pipeline)
-scripts/make_*.py
-scripts/build_notebook.py
-
-# regenerable outputs; keep only the trained coarsening policy
+# generated outputs; the trained coarsening policy is kept
 results/*
 !results/gnn_model_rl.pt
 
