@@ -32,6 +32,29 @@ Usage
   # real QPU run (needs dwave-system, minorminer, DWAVE_API_TOKEN):
   python scripts/run_qpu.py --solver Advantage_system6.4 \
       --arms static adaptive --coarsen gnn --N 10 --max-qpu-seconds 20
+
+Recommended order (start minimal, then expand)
+----------------------------------------------
+The most informative, hardware-unique result is the precision effect: on a device
+with limited coupler precision, adaptive conditioning should matter MORE than in
+simulation. The client-side diagnostic (dynamic_range, couplings_below_floor)
+already shows this without spending QPU time; the QPU sampling confirms it.
+
+  1. Validate the hardware path and gauge timing on a couple of tiny instances,
+     with a few-second budget:
+       python scripts/run_qpu.py --solver <NAME> --arms static adaptive \
+           --coarsen gnn --N 10 --instances R101 C201 --num-reads 200 \
+           --max-qpu-seconds 5
+  2. Full precision study (spin-reversals average out coupler bias; chain-break
+     fraction is logged):
+       python scripts/run_qpu.py --solver <NAME> --arms static adaptive \
+           --coarsen gnn --N 10 --max-qpu-seconds 20 --spin-reversals 4
+  3. Supporting runs, once the above works: embeddability (--coarsen none vs gnn
+     across N) and GNN-vs-heuristic transfer (--coarsen heuristic vs gnn).
+
+Absolute solution quality will be low at these sizes (analog noise, short anneals);
+the claims rest on the precision diagnostic and embedding statistics, not on raw
+feasibility counts.
 """
 from __future__ import annotations
 
