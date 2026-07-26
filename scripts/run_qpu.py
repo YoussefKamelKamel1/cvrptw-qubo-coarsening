@@ -1,60 +1,29 @@
-"""Run coarsened CVRPTW QUBOs on a D-Wave quantum annealer (budget-capped).
+"""Run coarsened CVRPTW QUBOs on a D-Wave annealer via Leap, budget-capped.
 
-This is the turnkey hardware script. The scientific question is NOT "beat
-classical" (a classical repair is cheaper); it is:
+Experiments:
+  1. static vs adaptive penalties at equal budget (--arms), comparing the
+     conditioning effect on hardware with simulation.
+  2. embeddability: minor-embedding chain length, qubit count, and failures.
+  3. GNN vs heuristic coarsening (--coarsen), feasibility on hardware.
 
-  1. Does penalty conditioning matter MORE on hardware than in simulation?
-     A physical annealer has limited coupler precision, so a QUBO with a huge
-     internal dynamic range (static penalties, dominated by the (2^m)^2 capacity
-     slack couplings) loses its objective/time-window couplings into the analog
-     noise floor after auto-scaling. Adaptive conditioning should therefore help
-     more on the QPU than on simulated annealing. We run static vs adaptive at
-     equal budget and compare the delta.
-  2. Does coarsening make the problem embeddable at all (chain length, qubits)?
-  3. Does the tuning-free GNN coarsening transfer to real hardware?
+The solver is selected explicitly (--solver / --topology) and its chip properties
+are logged; the script refuses to pick one implicitly, keeping runs reproducible
+across Advantage (Pegasus) and Advantage2 (Zephyr). Each run logs the QUBO dynamic
+range and the number of couplings below the coupler-precision floor, the embedding
+statistics, chain-break fraction, and qpu_access_time, and aborts once a cumulative
+QPU-time budget is exceeded.
 
-Reproducibility / device pinning
---------------------------------
-The solver is selected explicitly and every chip property is logged, so a run is
-never ambiguous about WHICH device produced it (Advantage/Pegasus vs
-Advantage2/Zephyr differ in topology, qubit count and noise). Pass --solver or
---topology; if neither is given the script prints the available solvers and stops
-rather than silently picking one.
+Usage:
+  python scripts/run_qpu.py --dry-run          # simulator, validates the pipeline
+  python scripts/run_qpu.py --list-solvers     # list Leap QPU solvers, then stop
 
-Usage
------
-  # simulator, safe to run now (validates the whole pipeline):
-  python scripts/run_qpu.py --dry-run
+  # small run on a few instances (start here to gauge timing):
+  python scripts/run_qpu.py --solver <NAME> --arms static adaptive \
+      --coarsen gnn --N 10 --instances R101 C201 --num-reads 200 --max-qpu-seconds 5
 
-  # list the QPU solvers available to your Leap account, then stop:
-  python scripts/run_qpu.py --list-solvers
-
-  # real QPU run (needs dwave-system, minorminer, DWAVE_API_TOKEN):
-  python scripts/run_qpu.py --solver Advantage_system6.4 \
-      --arms static adaptive --coarsen gnn --N 10 --max-qpu-seconds 20
-
-Recommended order (start minimal, then expand)
-----------------------------------------------
-The most informative, hardware-unique result is the precision effect: on a device
-with limited coupler precision, adaptive conditioning should matter MORE than in
-simulation. The client-side diagnostic (dynamic_range, couplings_below_floor)
-already shows this without spending QPU time; the QPU sampling confirms it.
-
-  1. Validate the hardware path and gauge timing on a couple of tiny instances,
-     with a few-second budget:
-       python scripts/run_qpu.py --solver <NAME> --arms static adaptive \
-           --coarsen gnn --N 10 --instances R101 C201 --num-reads 200 \
-           --max-qpu-seconds 5
-  2. Full precision study (spin-reversals average out coupler bias; chain-break
-     fraction is logged):
-       python scripts/run_qpu.py --solver <NAME> --arms static adaptive \
-           --coarsen gnn --N 10 --max-qpu-seconds 20 --spin-reversals 4
-  3. Supporting runs, once the above works: embeddability (--coarsen none vs gnn
-     across N) and GNN-vs-heuristic transfer (--coarsen heuristic vs gnn).
-
-Absolute solution quality will be low at these sizes (analog noise, short anneals);
-the claims rest on the precision diagnostic and embedding statistics, not on raw
-feasibility counts.
+  # full run with gauge averaging:
+  python scripts/run_qpu.py --solver <NAME> --arms static adaptive \
+      --coarsen gnn --N 10 --max-qpu-seconds 20 --spin-reversals 4
 """
 from __future__ import annotations
 
@@ -118,10 +87,9 @@ def build_problem(name, N, coarsen, penalty_mode, model, device):
 def qubo_stats(qubo, floor: float):
     """Variable count and internal dynamic range of the QUBO.
 
-    ``n_below_floor`` = couplings whose magnitude, relative to the largest, falls
-    below ``floor`` -- a proxy for terms the QPU cannot resolve once the whole
-    problem is auto-scaled into the coupler range. This is why static penalties
-    (huge dynamic range) are expected to fare worse on hardware.
+    ``n_below_floor`` counts couplings whose magnitude, relative to the largest,
+    falls below ``floor``: terms the device may not resolve once the problem is
+    auto-scaled into the coupler range.
     """
     variables = set()
     coeffs = []
