@@ -10,6 +10,11 @@ pyyaml
 dimod==0.12.22
 dwave-samplers==1.8.0
 
+# offline minor-embedding study (scripts/embeddability.py)
+# 0.2.21 is the last minorminer that keeps numpy<2
+minorminer==0.2.21
+dwave-networkx
+
 # classical reference solver (CP-SAT)
 ortools==9.12.4544
 
