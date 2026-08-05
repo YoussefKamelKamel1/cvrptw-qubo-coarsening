@@ -99,6 +99,10 @@ def adaptive_penalties(problem: "VRPProblem",
     always outweighs any achievable objective gain (with margin) while keeping
     the coupling dynamic range ~O(unique_mult * num_customers) instead of the
     static ~1e7/objective (which grows unbounded as instances shrink).
+
+    A binding capacity constraint is the one case that survives ``smart_capacity``
+    and so keeps its log-slack; the weight is normalised by the squared slack
+    coefficient there (see below) to hold the same dynamic range.
     """
     cal = cal or PenaltyCalibration()
     n = len(problem.costs)
@@ -114,15 +118,22 @@ def adaptive_penalties(problem: "VRPProblem",
 
     # binding-aware capacity weight (Phase-2b)
     cap_mult = cal.cap_mult
+    slack_norm = 1.0
     total_demand = sum(problem.weights.get(j, 0) for j in problem.dests)
     Q = problem.capacities[0] if problem.capacities else 0
     if Q > 0 and total_demand > Q:
         cap_mult = min(cal.unique_mult,
                        cal.cap_mult * cal.binding_boost * (total_demand / Q))
+        # A binding constraint is kept rather than dropped, so it brings its log
+        # slack along. The largest slack coupling scales as (2^m_max)^2, which
+        # would lift the capacity block orders of magnitude above every other
+        # term -- the dynamic range this calibration exists to control. Divide it
+        # out so the block lands at the scale of the remaining penalties.
+        slack_norm = float(2 ** math.floor(math.log2(max(1.0, Q)))) ** 2
 
     return PenaltyWeights(
         only_one=cal.unique_mult * B,
-        capacity_penalty=cap_mult * B,
+        capacity_penalty=cap_mult * B / slack_norm,
         time_window_penalty=cal.tw_mult * B,
         vehicle_start_cost=cal.vehicle_start_mult * cal.order * max_edge,
         order=cal.order,
