@@ -54,7 +54,21 @@ def solve_one(name, N, coarsen, model, device, seed, reads, sweeps, n_perms):
     qubo = build_setpartition_qubo(problem, pool)
     n_vars = len(pool)
 
-    sample = (solve_qubo(qubo, SolverConfig("sa", reads, sweeps, seed)) or [{}])[0]
+    # Full sample distribution, so the exact-cover rate is comparable with the
+    # position encoding's pre-repair feasibility (which is also over all samples)
+    # rather than being a best-of-N number.
+    from dwave.samplers import SimulatedAnnealingSampler
+    ss = SimulatedAnnealingSampler().sample_qubo(qubo.dict, num_reads=reads,
+                                                 num_sweeps=sweeps, seed=seed)
+    covered = total = 0
+    for d in ss.aggregate().data(["sample", "num_occurrences"]):
+        occ = int(d.num_occurrences)
+        total += occ
+        if cover_status(decode_setpartition(dict(d.sample), pool), problem)[0]:
+            covered += occ
+    raw_cover_frac = covered / total if total else 0.0
+
+    sample = dict(next(iter(ss.lowest().samples())))
     selected = decode_setpartition(sample, pool)
     exact, n_missing, n_dup = cover_status(selected, problem)
 
@@ -65,7 +79,7 @@ def solve_one(name, N, coarsen, model, device, seed, reads, sweeps, n_perms):
         routes = coarsener.inflate_route(routes)
         metrics_graph = coarsener.graph
     m = calculate_route_metrics(metrics_graph, routes, depot, inst.capacity)
-    return dict(n_vars=n_vars, exact_cover=exact, n_missing=n_missing, n_dup=n_dup,
+    return dict(n_vars=n_vars, exact_cover=exact, raw_cover_frac=raw_cover_frac, n_missing=n_missing, n_dup=n_dup,
                 feasible=bool(m["is_feasible"]), dist=float(m["total_distance"]))
 
 
@@ -97,7 +111,7 @@ def main():
     for N in args.N:
         print(f"-- N={N} --", flush=True)
         for coarsen in args.coarsen:
-            vars_, exact, feas, dists = [], [], [], []
+            vars_, exact, feas, dists, rawc = [], [], [], [], []
             for name in names:
                 for seed in args.seeds:
                     set_global_seed(seed)
@@ -105,12 +119,13 @@ def main():
                                   args.num_reads, args.num_sweeps, args.n_perms)
                     vars_.append(r["n_vars"])
                     exact.append(r["exact_cover"])
+                    rawc.append(r["raw_cover_frac"])
                     feas.append(r["feasible"])
                     if r["feasible"]:
                         dists.append(r["dist"])
                     rows.append(dict(N=N, coarsen=coarsen, instance=name, seed=seed, **r))
             print(f"   {coarsen:10s} pool={np.mean(vars_):5.0f}  "
-                  f"exact_cover={100*np.mean(exact):5.1f}%  feas={100*np.mean(feas):5.1f}%  "
+                  f"exact_cover={100*np.mean(exact):5.1f}%  raw_cover={100*np.mean(rawc):5.1f}%  feas={100*np.mean(feas):5.1f}%  "
                   f"dist={np.mean(dists) if dists else float('nan'):6.1f}", flush=True)
 
     out = ROOT / args.out
