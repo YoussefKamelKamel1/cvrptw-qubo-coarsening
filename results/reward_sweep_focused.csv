@@ -1,0 +1,469 @@
+setting,train_seed,N,instance,seed,n_vars,pre_viol,pre_feasible,feasible,distance
+published,0,10,C104,0,24,0.0,True,True,97.57732572324716
+published,0,10,C104,1,24,0.0,True,True,97.57732572324716
+published,0,10,C104,2,24,0.0,True,True,97.57732572324716
+published,0,10,C108,0,24,0.0,True,True,91.58320785438272
+published,0,10,C108,1,24,0.0,True,True,91.58320785438272
+published,0,10,C108,2,24,0.0,True,True,91.58320785438272
+published,0,10,C204,0,40,0.0,True,True,165.77438798689911
+published,0,10,C204,1,40,0.0,True,True,183.64701545303433
+published,0,10,C204,2,40,0.0,True,True,177.86059182106146
+published,0,10,C208,0,24,0.0,True,True,153.75732731347344
+published,0,10,C208,1,24,0.0,True,True,153.7573273134734
+published,0,10,C208,2,24,0.0,True,True,153.7573273134734
+published,0,10,R104,0,24,1.0,False,False,241.34827355119629
+published,0,10,R104,1,24,1.0,False,False,237.70484945432077
+published,0,10,R104,2,24,1.0,False,False,241.3482735511963
+published,0,10,R108,0,24,0.0,True,True,219.90165875659213
+published,0,10,R108,1,24,0.0,True,True,219.90165875659213
+published,0,10,R108,2,24,0.0,True,True,219.90165875659213
+published,0,10,R112,0,24,0.0,True,True,221.60040293132093
+published,0,10,R112,1,24,0.0,True,True,221.60040293132096
+published,0,10,R112,2,24,0.0,True,True,221.60040293132093
+published,0,10,R204,0,24,0.0,True,True,247.94842324290715
+published,0,10,R204,1,24,0.0,True,True,247.94842324290715
+published,0,10,R204,2,24,0.0,True,True,247.94842324290715
+published,0,10,R208,0,24,0.0,True,True,247.94842324290715
+published,0,10,R208,1,24,0.0,True,True,247.94842324290715
+published,0,10,R208,2,24,0.0,True,True,247.9484232429072
+published,0,10,RC104,0,40,0.0,True,True,219.88360931034313
+published,0,10,RC104,1,40,0.0,True,True,219.88360931034316
+published,0,10,RC104,2,40,0.0,True,True,219.88360931034313
+published,0,10,RC108,0,40,0.0,True,True,171.99824013889548
+published,0,10,RC108,1,40,0.0,True,True,171.99824013889548
+published,0,10,RC108,2,40,0.0,True,True,171.99824013889548
+published,0,10,RC204,0,24,0.0,True,True,174.67907498016797
+published,0,10,RC204,1,24,0.0,True,True,174.67907498016797
+published,0,10,RC204,2,24,0.0,True,True,174.67907498016797
+published,0,10,RC208,0,24,0.0,True,True,171.99824013889548
+published,0,10,RC208,1,24,0.0,True,True,171.99824013889548
+published,0,10,RC208,2,24,0.0,True,True,171.9982401388955
+published,0,20,C104,0,128,0.0,True,True,271.1257079607957
+published,0,20,C104,1,128,0.0,True,True,276.1723423484805
+published,0,20,C104,2,128,0.0,True,True,305.01395854293605
+published,0,20,C108,0,108,0.0,True,True,238.83299137915014
+published,0,20,C108,1,108,1.0,False,True,270.94053970247285
+published,0,20,C108,2,108,0.0,True,True,208.30641625465276
+published,0,20,C204,0,144,0.0,True,True,342.5533816656362
+published,0,20,C204,1,144,1.0,False,True,411.2852422429796
+published,0,20,C204,2,144,1.0,False,True,363.6399163997603
+published,0,20,C208,0,96,0.0,True,True,374.607726173791
+published,0,20,C208,1,96,0.0,True,True,345.714685638066
+published,0,20,C208,2,96,0.0,True,True,327.5714965473305
+published,0,20,R104,0,176,3.0,False,False,497.70562894838224
+published,0,20,R104,1,176,3.0,False,False,462.72380670812635
+published,0,20,R104,2,176,3.0,False,False,448.6981406763426
+published,0,20,R108,0,128,0.0,True,True,446.3285427026657
+published,0,20,R108,1,128,0.0,True,True,435.57294328004934
+published,0,20,R108,2,128,0.0,True,True,446.3285427026657
+published,0,20,R112,0,108,2.0,False,False,414.6591608085481
+published,0,20,R112,1,108,2.0,False,False,449.529173150775
+published,0,20,R112,2,108,2.0,False,False,435.45936545001894
+published,0,20,R204,0,84,0.0,True,True,436.27596184016693
+published,0,20,R204,1,84,0.0,True,True,482.69587590265587
+published,0,20,R204,2,84,0.0,True,True,454.916764836151
+published,0,20,R208,0,84,0.0,True,True,417.34843856643573
+published,0,20,R208,1,84,0.0,True,True,417.8602475939268
+published,0,20,R208,2,84,0.0,True,True,408.55824747670994
+published,0,20,RC104,0,128,0.0,True,True,446.76605030022415
+published,0,20,RC104,1,128,0.0,True,True,452.4867490712155
+published,0,20,RC104,2,128,0.0,True,True,452.5383972556244
+published,0,20,RC108,0,128,0.0,True,True,378.22388747960684
+published,0,20,RC108,1,128,0.0,True,True,371.3830280444753
+published,0,20,RC108,2,128,0.0,True,True,378.29446730348786
+published,0,20,RC204,0,144,0.0,True,True,519.9695873280965
+published,0,20,RC204,1,144,0.0,True,True,527.103341052797
+published,0,20,RC204,2,144,0.0,True,True,447.2611010580411
+published,0,20,RC208,0,144,0.0,True,True,488.15673321709585
+published,0,20,RC208,1,144,0.0,True,True,488.1728007496411
+published,0,20,RC208,2,144,0.0,True,True,566.7350772280865
+published,1,10,C104,0,54,0.0,True,True,126.54280299630433
+published,1,10,C104,1,54,0.0,True,True,133.27006331068475
+published,1,10,C104,2,54,0.0,True,True,133.57999480464522
+published,1,10,C108,0,24,0.0,True,True,91.58320785438272
+published,1,10,C108,1,24,0.0,True,True,91.58320785438272
+published,1,10,C108,2,24,0.0,True,True,91.58320785438272
+published,1,10,C204,0,40,0.0,True,True,165.77438798689911
+published,1,10,C204,1,40,0.0,True,True,183.64701545303433
+published,1,10,C204,2,40,0.0,True,True,177.86059182106146
+published,1,10,C208,0,24,0.0,True,True,153.7573273134734
+published,1,10,C208,1,24,0.0,True,True,153.7573273134734
+published,1,10,C208,2,24,0.0,True,True,153.7573273134734
+published,1,10,R104,0,24,1.0,False,False,204.4065611886282
+published,1,10,R104,1,24,1.0,False,False,204.4065611886282
+published,1,10,R104,2,24,1.0,False,False,204.4065611886282
+published,1,10,R108,0,24,0.0,True,False,233.64753466077673
+published,1,10,R108,1,24,0.0,True,False,233.64753466077673
+published,1,10,R108,2,24,0.0,True,False,233.64753466077673
+published,1,10,R112,0,24,0.0,True,True,221.60040293132093
+published,1,10,R112,1,24,0.0,True,True,221.60040293132093
+published,1,10,R112,2,24,0.0,True,True,221.60040293132093
+published,1,10,R204,0,24,0.0,True,True,242.77707735640334
+published,1,10,R204,1,24,0.0,True,True,242.77707735640337
+published,1,10,R204,2,24,0.0,True,True,242.77707735640334
+published,1,10,R208,0,24,0.0,True,True,242.77707735640334
+published,1,10,R208,1,24,0.0,True,True,242.77707735640337
+published,1,10,R208,2,24,0.0,True,True,241.54470597826912
+published,1,10,RC104,0,40,0.0,True,True,224.84153242050854
+published,1,10,RC104,1,40,0.0,True,True,224.84153242050854
+published,1,10,RC104,2,40,0.0,True,True,224.84153242050854
+published,1,10,RC108,0,40,0.0,True,True,169.8794572898442
+published,1,10,RC108,1,40,0.0,True,True,169.8794572898442
+published,1,10,RC108,2,40,0.0,True,True,169.8794572898442
+published,1,10,RC204,0,24,0.0,True,True,174.67907498016797
+published,1,10,RC204,1,24,0.0,True,True,209.708033429025
+published,1,10,RC204,2,24,0.0,True,True,174.67907498016797
+published,1,10,RC208,0,24,0.0,True,True,171.9982401388955
+published,1,10,RC208,1,24,0.0,True,True,171.9982401388955
+published,1,10,RC208,2,24,0.0,True,True,171.9982401388955
+published,1,20,C104,0,176,0.0,True,True,363.45925067688864
+published,1,20,C104,1,176,0.0,True,True,361.84698082296177
+published,1,20,C104,2,176,1.0,False,True,321.1698149756334
+published,1,20,C108,0,176,0.0,True,True,347.5966643554351
+published,1,20,C108,1,176,1.0,False,True,308.31410044715983
+published,1,20,C108,2,176,0.0,True,True,310.5693904728484
+published,1,20,C204,0,96,0.0,True,True,356.32908865198914
+published,1,20,C204,1,96,0.0,True,True,381.69196301438836
+published,1,20,C204,2,96,0.0,True,True,356.71840367238184
+published,1,20,C208,0,96,0.0,True,True,288.0672404467131
+published,1,20,C208,1,96,0.0,True,True,337.6194887325024
+published,1,20,C208,2,96,0.0,True,True,319.5881665974065
+published,1,20,R104,0,176,3.0,False,False,437.1173903676494
+published,1,20,R104,1,176,3.0,False,False,468.3731197459942
+published,1,20,R104,2,176,4.0,False,False,464.3167074489397
+published,1,20,R108,0,176,2.0,False,False,476.3272867919312
+published,1,20,R108,1,176,1.0,False,False,461.0187495873385
+published,1,20,R108,2,176,3.0,False,False,499.6670014438163
+published,1,20,R112,0,176,0.0,True,True,447.6349034168051
+published,1,20,R112,1,176,1.0,False,True,405.57955738858874
+published,1,20,R112,2,176,1.0,False,False,498.41630507635466
+published,1,20,R204,0,144,0.0,True,True,449.2822390459133
+published,1,20,R204,1,144,0.0,True,True,460.48047462351184
+published,1,20,R204,2,144,0.0,True,True,479.0971287746367
+published,1,20,R208,0,96,0.0,True,True,457.6410053237586
+published,1,20,R208,1,96,0.0,True,True,503.7835961186097
+published,1,20,R208,2,96,0.0,True,True,468.6203215733411
+published,1,20,RC104,0,128,0.0,True,True,450.27063236923567
+published,1,20,RC104,1,128,0.0,True,True,411.20313288415264
+published,1,20,RC104,2,128,0.0,True,True,411.2031328841527
+published,1,20,RC108,0,128,0.0,True,True,414.04382364834106
+published,1,20,RC108,1,128,0.0,True,True,438.91581905068745
+published,1,20,RC108,2,128,0.0,True,True,417.90663639497313
+published,1,20,RC204,0,144,0.0,True,True,430.3153562633511
+published,1,20,RC204,1,144,0.0,True,True,487.5292402864179
+published,1,20,RC204,2,144,0.0,True,True,524.2034690837204
+published,1,20,RC208,0,84,0.0,True,True,347.3146256978997
+published,1,20,RC208,1,84,0.0,True,True,473.2716483285768
+published,1,20,RC208,2,84,0.0,True,True,399.0401963192219
+published,2,10,C104,0,24,0.0,True,True,97.57732572324716
+published,2,10,C104,1,24,0.0,True,True,97.57732572324716
+published,2,10,C104,2,24,0.0,True,True,97.57732572324716
+published,2,10,C108,0,24,0.0,True,True,85.24651122638116
+published,2,10,C108,1,24,0.0,True,True,85.24651122638116
+published,2,10,C108,2,24,0.0,True,True,85.24651122638116
+published,2,10,C204,0,24,0.0,True,True,165.77438798689911
+published,2,10,C204,1,24,0.0,True,True,165.77438798689911
+published,2,10,C204,2,24,0.0,True,True,165.77438798689911
+published,2,10,C208,0,24,0.0,True,True,153.7573273134734
+published,2,10,C208,1,24,0.0,True,True,153.7573273134734
+published,2,10,C208,2,24,0.0,True,True,153.7573273134734
+published,2,10,R104,0,24,1.0,False,False,209.47985719930404
+published,2,10,R104,1,24,1.0,False,False,209.47985719930404
+published,2,10,R104,2,24,1.0,False,False,224.90081080499965
+published,2,10,R108,0,24,0.0,True,True,205.60817620100272
+published,2,10,R108,1,24,0.0,True,True,205.60817620100272
+published,2,10,R108,2,24,0.0,True,True,205.60817620100272
+published,2,10,R112,0,24,0.0,True,True,221.60040293132093
+published,2,10,R112,1,24,0.0,True,True,221.60040293132093
+published,2,10,R112,2,24,0.0,True,True,221.60040293132093
+published,2,10,R204,0,24,0.0,True,True,230.60717169612033
+published,2,10,R204,1,24,0.0,True,True,230.60717169612033
+published,2,10,R204,2,24,0.0,True,True,230.60717169612033
+published,2,10,R208,0,24,0.0,True,True,230.6071716961204
+published,2,10,R208,1,24,0.0,True,True,230.6071716961204
+published,2,10,R208,2,24,0.0,True,True,230.6071716961204
+published,2,10,RC104,0,40,0.0,True,True,224.84153242050854
+published,2,10,RC104,1,40,0.0,True,True,224.84153242050854
+published,2,10,RC104,2,40,0.0,True,True,224.84153242050854
+published,2,10,RC108,0,40,0.0,True,True,176.41644282185
+published,2,10,RC108,1,40,0.0,True,True,176.41644282184998
+published,2,10,RC108,2,40,0.0,True,True,176.41644282184998
+published,2,10,RC204,0,24,0.0,True,True,174.67907498016797
+published,2,10,RC204,1,24,0.0,True,True,209.708033429025
+published,2,10,RC204,2,24,0.0,True,True,174.67907498016797
+published,2,10,RC208,0,24,0.0,True,True,176.40675772070966
+published,2,10,RC208,1,24,0.0,True,True,176.40675772070966
+published,2,10,RC208,2,24,0.0,True,True,176.40675772070966
+published,2,20,C104,0,128,0.0,True,True,283.31596134645497
+published,2,20,C104,1,128,0.0,True,True,284.5426313053964
+published,2,20,C104,2,128,0.0,True,True,305.473809196719
+published,2,20,C108,0,176,0.0,True,True,347.5966643554351
+published,2,20,C108,1,176,1.0,False,True,308.31410044715983
+published,2,20,C108,2,176,0.0,True,True,310.5693904728484
+published,2,20,C204,0,84,0.0,True,True,301.0701529581298
+published,2,20,C204,1,84,0.0,True,True,290.6888249165498
+published,2,20,C204,2,84,1.0,False,True,272.64608013618454
+published,2,20,C208,0,144,0.0,True,True,376.717491113661
+published,2,20,C208,1,144,0.0,True,True,336.97832234437476
+published,2,20,C208,2,144,0.0,True,True,334.98948672568906
+published,2,20,R104,0,176,2.0,False,False,449.21574458799626
+published,2,20,R104,1,176,3.0,False,False,497.08944369886996
+published,2,20,R104,2,176,3.0,False,False,480.4286022355844
+published,2,20,R108,0,176,3.0,False,False,475.7036732435704
+published,2,20,R108,1,176,1.0,False,False,486.7633088443994
+published,2,20,R108,2,176,2.0,False,False,498.7431699306849
+published,2,20,R112,0,128,1.0,False,True,511.6966703468985
+published,2,20,R112,1,128,0.0,True,True,431.6335995458445
+published,2,20,R112,2,128,0.0,True,True,434.70164471684546
+published,2,20,R204,0,144,0.0,True,True,500.0227127548972
+published,2,20,R204,1,144,0.0,True,True,522.2643869014669
+published,2,20,R204,2,144,0.0,True,True,525.497109406407
+published,2,20,R208,0,96,0.0,True,True,488.32120686353045
+published,2,20,R208,1,96,0.0,True,True,468.0720844939155
+published,2,20,R208,2,96,0.0,True,True,451.32793657428493
+published,2,20,RC104,0,176,1.0,False,True,571.7109505968956
+published,2,20,RC104,1,176,2.0,False,True,518.3658241506904
+published,2,20,RC104,2,176,1.0,False,False,443.3825464946371
+published,2,20,RC108,0,128,0.0,True,True,432.01797418814215
+published,2,20,RC108,1,128,0.0,True,True,436.1808149524268
+published,2,20,RC108,2,128,0.0,True,False,384.02067759588255
+published,2,20,RC204,0,84,0.0,True,True,450.28913570242435
+published,2,20,RC204,1,84,0.0,True,True,483.4844896849913
+published,2,20,RC204,2,84,0.0,True,True,478.4756172597189
+published,2,20,RC208,0,96,0.0,True,True,580.880078653296
+published,2,20,RC208,1,96,0.0,True,True,558.5463583075322
+published,2,20,RC208,2,96,0.0,True,True,532.4948168369896
+feasibility only,0,10,C104,0,24,0.0,True,True,97.20494101048939
+feasibility only,0,10,C104,1,24,0.0,True,True,97.20494101048939
+feasibility only,0,10,C104,2,24,0.0,True,True,97.20494101048939
+feasibility only,0,10,C108,0,24,0.0,True,True,93.2687855022323
+feasibility only,0,10,C108,1,24,0.0,True,True,93.2687855022323
+feasibility only,0,10,C108,2,24,0.0,True,True,93.2687855022323
+feasibility only,0,10,C204,0,24,0.0,True,True,156.38144510929055
+feasibility only,0,10,C204,1,24,0.0,True,True,156.38144510929055
+feasibility only,0,10,C204,2,24,0.0,True,True,156.38144510929055
+feasibility only,0,10,C208,0,24,0.0,True,True,153.75732731347344
+feasibility only,0,10,C208,1,24,0.0,True,True,153.7573273134734
+feasibility only,0,10,C208,2,24,0.0,True,True,153.7573273134734
+feasibility only,0,10,R104,0,24,0.0,True,True,219.90165875659213
+feasibility only,0,10,R104,1,24,0.0,True,True,219.90165875659213
+feasibility only,0,10,R104,2,24,0.0,True,True,219.90165875659213
+feasibility only,0,10,R108,0,24,0.0,True,True,219.90165875659213
+feasibility only,0,10,R108,1,24,0.0,True,True,219.90165875659213
+feasibility only,0,10,R108,2,24,0.0,True,True,219.90165875659213
+feasibility only,0,10,R112,0,24,0.0,True,True,221.60040293132093
+feasibility only,0,10,R112,1,24,0.0,True,True,221.60040293132093
+feasibility only,0,10,R112,2,24,0.0,True,True,221.60040293132093
+feasibility only,0,10,R204,0,24,0.0,True,True,241.22785790589694
+feasibility only,0,10,R204,1,24,0.0,True,True,241.2278579058969
+feasibility only,0,10,R204,2,24,0.0,True,True,241.22785790589694
+feasibility only,0,10,R208,0,24,0.0,True,True,247.94842324290715
+feasibility only,0,10,R208,1,24,0.0,True,True,247.94842324290715
+feasibility only,0,10,R208,2,24,0.0,True,True,247.9484232429072
+feasibility only,0,10,RC104,0,40,0.0,True,True,219.88360931034313
+feasibility only,0,10,RC104,1,40,0.0,True,True,219.88360931034316
+feasibility only,0,10,RC104,2,40,0.0,True,True,219.88360931034313
+feasibility only,0,10,RC108,0,40,0.0,True,True,171.9982401388955
+feasibility only,0,10,RC108,1,40,0.0,True,True,171.99824013889548
+feasibility only,0,10,RC108,2,40,0.0,True,True,171.99824013889548
+feasibility only,0,10,RC204,0,24,0.0,True,True,179.53966423740482
+feasibility only,0,10,RC204,1,24,0.0,True,True,179.53966423740482
+feasibility only,0,10,RC204,2,24,0.0,True,True,179.53966423740485
+feasibility only,0,10,RC208,0,24,0.0,True,True,215.21645644173321
+feasibility only,0,10,RC208,1,24,0.0,True,True,215.21645644173321
+feasibility only,0,10,RC208,2,24,0.0,True,True,215.21645644173321
+feasibility only,0,20,C104,0,176,0.0,True,True,310.78659890024375
+feasibility only,0,20,C104,1,176,0.0,True,True,289.1169649619818
+feasibility only,0,20,C104,2,176,0.0,True,True,315.66481547132383
+feasibility only,0,20,C108,0,128,0.0,True,True,262.7998508809201
+feasibility only,0,20,C108,1,128,0.0,True,True,293.15367372374874
+feasibility only,0,20,C108,2,128,0.0,True,True,275.4333624576811
+feasibility only,0,20,C204,0,96,0.0,True,True,312.01049944527335
+feasibility only,0,20,C204,1,96,0.0,True,True,317.02675677872503
+feasibility only,0,20,C204,2,96,0.0,True,True,316.59652853084924
+feasibility only,0,20,C208,0,144,1.0,False,True,360.9705017645172
+feasibility only,0,20,C208,1,144,0.0,True,True,400.15332313326763
+feasibility only,0,20,C208,2,144,0.0,True,True,379.95202439826016
+feasibility only,0,20,R104,0,128,1.0,False,False,435.05170360031383
+feasibility only,0,20,R104,1,128,2.0,False,False,472.75738702901845
+feasibility only,0,20,R104,2,128,2.0,False,False,449.2804697527006
+feasibility only,0,20,R108,0,128,1.0,False,False,475.237158318155
+feasibility only,0,20,R108,1,128,1.0,False,False,449.48676944128556
+feasibility only,0,20,R108,2,128,0.0,True,False,452.17756285953396
+feasibility only,0,20,R112,0,128,0.0,True,True,408.80448858865145
+feasibility only,0,20,R112,1,128,1.0,False,True,408.80448858865157
+feasibility only,0,20,R112,2,128,0.0,True,True,407.5695762885389
+feasibility only,0,20,R204,0,96,0.0,True,True,465.1021000709634
+feasibility only,0,20,R204,1,96,0.0,True,True,452.6122307871996
+feasibility only,0,20,R204,2,96,0.0,True,True,455.1605596792248
+feasibility only,0,20,R208,0,144,0.0,True,True,457.88873478612277
+feasibility only,0,20,R208,1,144,0.0,True,True,521.4827760183157
+feasibility only,0,20,R208,2,144,0.0,True,True,498.17596546977364
+feasibility only,0,20,RC104,0,108,1.0,False,False,357.8366637530506
+feasibility only,0,20,RC104,1,108,1.0,False,False,352.7039128241926
+feasibility only,0,20,RC104,2,108,1.0,False,False,355.5838043706164
+feasibility only,0,20,RC108,0,128,0.0,True,True,425.1051044193092
+feasibility only,0,20,RC108,1,128,0.0,True,True,407.62281319639715
+feasibility only,0,20,RC108,2,128,0.0,True,True,444.7400143787409
+feasibility only,0,20,RC204,0,96,0.0,True,True,475.33583268061636
+feasibility only,0,20,RC204,1,96,0.0,True,True,450.1509779758146
+feasibility only,0,20,RC204,2,96,0.0,True,True,496.84501453994307
+feasibility only,0,20,RC208,0,96,0.0,True,True,546.2273150531263
+feasibility only,0,20,RC208,1,96,0.0,True,True,448.7052575645924
+feasibility only,0,20,RC208,2,96,0.0,True,True,445.3476431952075
+feasibility only,1,10,C104,0,24,0.0,True,True,96.16678345569998
+feasibility only,1,10,C104,1,24,0.0,True,True,96.16678345569998
+feasibility only,1,10,C104,2,24,0.0,True,True,96.16678345569998
+feasibility only,1,10,C108,0,24,0.0,True,True,91.58320785438272
+feasibility only,1,10,C108,1,24,0.0,True,True,91.58320785438272
+feasibility only,1,10,C108,2,24,0.0,True,True,91.58320785438272
+feasibility only,1,10,C204,0,40,0.0,True,True,165.77438798689911
+feasibility only,1,10,C204,1,40,0.0,True,True,183.64701545303433
+feasibility only,1,10,C204,2,40,0.0,True,True,177.86059182106146
+feasibility only,1,10,C208,0,24,0.0,True,True,153.75732731347344
+feasibility only,1,10,C208,1,24,0.0,True,True,153.7573273134734
+feasibility only,1,10,C208,2,24,0.0,True,True,153.7573273134734
+feasibility only,1,10,R104,0,24,1.0,False,False,204.4065611886282
+feasibility only,1,10,R104,1,24,1.0,False,False,204.4065611886282
+feasibility only,1,10,R104,2,24,1.0,False,False,204.4065611886282
+feasibility only,1,10,R108,0,24,0.0,True,False,233.64753466077673
+feasibility only,1,10,R108,1,24,0.0,True,False,233.64753466077673
+feasibility only,1,10,R108,2,24,0.0,True,False,233.64753466077673
+feasibility only,1,10,R112,0,24,0.0,True,True,236.2725719544148
+feasibility only,1,10,R112,1,24,0.0,True,True,236.2725719544148
+feasibility only,1,10,R112,2,24,0.0,True,True,236.2725719544148
+feasibility only,1,10,R204,0,24,0.0,True,True,256.9818772181816
+feasibility only,1,10,R204,1,24,0.0,True,True,256.98187721818164
+feasibility only,1,10,R204,2,24,0.0,True,True,256.98187721818164
+feasibility only,1,10,R208,0,24,0.0,True,True,242.77707735640334
+feasibility only,1,10,R208,1,24,0.0,True,True,242.77707735640337
+feasibility only,1,10,R208,2,24,0.0,True,True,241.54470597826912
+feasibility only,1,10,RC104,0,40,0.0,True,True,219.88360931034313
+feasibility only,1,10,RC104,1,40,0.0,True,True,219.88360931034316
+feasibility only,1,10,RC104,2,40,0.0,True,True,219.88360931034313
+feasibility only,1,10,RC108,0,40,0.0,True,True,171.9982401388955
+feasibility only,1,10,RC108,1,40,0.0,True,True,171.99824013889548
+feasibility only,1,10,RC108,2,40,0.0,True,True,171.99824013889548
+feasibility only,1,10,RC204,0,24,0.0,True,True,174.67907498016797
+feasibility only,1,10,RC204,1,24,0.0,True,True,209.708033429025
+feasibility only,1,10,RC204,2,24,0.0,True,True,174.67907498016797
+feasibility only,1,10,RC208,0,24,0.0,True,True,205.71480330292906
+feasibility only,1,10,RC208,1,24,0.0,True,True,171.99824013889548
+feasibility only,1,10,RC208,2,24,0.0,True,True,171.9982401388955
+feasibility only,1,20,C104,0,176,0.0,True,True,309.22704212299413
+feasibility only,1,20,C104,1,176,0.0,True,True,286.17183175765916
+feasibility only,1,20,C104,2,176,0.0,True,True,307.9087067463591
+feasibility only,1,20,C108,0,128,0.0,True,True,288.5189909899489
+feasibility only,1,20,C108,1,128,0.0,True,True,315.4912489570239
+feasibility only,1,20,C108,2,128,0.0,True,True,277.7531574148153
+feasibility only,1,20,C204,0,96,0.0,True,True,343.1786234619117
+feasibility only,1,20,C204,1,96,0.0,True,True,391.827390553253
+feasibility only,1,20,C204,2,96,0.0,True,True,368.2954040251036
+feasibility only,1,20,C208,0,144,0.0,True,True,346.2987161799
+feasibility only,1,20,C208,1,144,0.0,True,True,350.93367584491386
+feasibility only,1,20,C208,2,144,0.0,True,True,406.7016663981749
+feasibility only,1,20,R104,0,176,3.0,False,False,493.092001857382
+feasibility only,1,20,R104,1,176,2.0,False,False,512.6257728890808
+feasibility only,1,20,R104,2,176,1.0,False,False,493.09200185738194
+feasibility only,1,20,R108,0,128,0.0,True,True,459.88288194355266
+feasibility only,1,20,R108,1,128,0.0,True,False,460.0531292496087
+feasibility only,1,20,R108,2,128,0.0,True,True,426.15943587396384
+feasibility only,1,20,R112,0,176,1.0,False,True,462.1850362939739
+feasibility only,1,20,R112,1,176,0.0,True,False,457.3097027892039
+feasibility only,1,20,R112,2,176,0.0,True,True,456.3859633243539
+feasibility only,1,20,R204,0,96,0.0,True,True,544.2406242846105
+feasibility only,1,20,R204,1,96,0.0,True,True,480.6931240473026
+feasibility only,1,20,R204,2,96,0.0,True,True,465.8431451410859
+feasibility only,1,20,R208,0,96,0.0,True,True,489.6522262273339
+feasibility only,1,20,R208,1,96,0.0,True,True,512.6996615346532
+feasibility only,1,20,R208,2,96,0.0,True,True,460.1455094178216
+feasibility only,1,20,RC104,0,176,1.0,False,True,491.8960030990776
+feasibility only,1,20,RC104,1,176,3.0,False,True,459.9011306063589
+feasibility only,1,20,RC104,2,176,1.0,False,False,512.4128879858745
+feasibility only,1,20,RC108,0,128,0.0,True,True,442.3227647721059
+feasibility only,1,20,RC108,1,128,0.0,True,True,430.94443990101325
+feasibility only,1,20,RC108,2,128,0.0,True,True,409.11131126424254
+feasibility only,1,20,RC204,0,96,0.0,True,True,518.1772232311426
+feasibility only,1,20,RC204,1,96,0.0,True,True,514.0029786985679
+feasibility only,1,20,RC204,2,96,0.0,True,True,515.2284452444652
+feasibility only,1,20,RC208,0,96,0.0,True,True,509.42798491540975
+feasibility only,1,20,RC208,1,96,0.0,True,True,497.48715526925236
+feasibility only,1,20,RC208,2,96,0.0,True,True,484.1494536953247
+feasibility only,2,10,C104,0,24,0.0,True,True,95.49673707799002
+feasibility only,2,10,C104,1,24,0.0,True,True,95.49673707799002
+feasibility only,2,10,C104,2,24,0.0,True,True,95.49673707799002
+feasibility only,2,10,C108,0,24,0.0,True,True,91.58320785438272
+feasibility only,2,10,C108,1,24,0.0,True,True,91.58320785438272
+feasibility only,2,10,C108,2,24,0.0,True,True,91.58320785438272
+feasibility only,2,10,C204,0,24,0.0,True,True,165.77438798689911
+feasibility only,2,10,C204,1,24,0.0,True,True,170.93925912900772
+feasibility only,2,10,C204,2,24,0.0,True,True,165.77438798689911
+feasibility only,2,10,C208,0,24,0.0,True,True,153.75732731347344
+feasibility only,2,10,C208,1,24,0.0,True,True,153.7573273134734
+feasibility only,2,10,C208,2,24,0.0,True,True,153.7573273134734
+feasibility only,2,10,R104,0,24,1.0,False,False,224.1936061478154
+feasibility only,2,10,R104,1,24,1.0,False,False,224.1936061478154
+feasibility only,2,10,R104,2,24,1.0,False,False,224.1936061478154
+feasibility only,2,10,R108,0,24,0.0,True,False,260.62982213796727
+feasibility only,2,10,R108,1,24,0.0,True,False,260.62982213796727
+feasibility only,2,10,R108,2,24,0.0,True,False,260.62982213796727
+feasibility only,2,10,R112,0,24,0.0,True,True,236.2725719544148
+feasibility only,2,10,R112,1,24,0.0,True,True,236.2725719544148
+feasibility only,2,10,R112,2,24,0.0,True,True,236.2725719544148
+feasibility only,2,10,R204,0,24,0.0,True,True,242.77707735640334
+feasibility only,2,10,R204,1,24,0.0,True,True,242.77707735640337
+feasibility only,2,10,R204,2,24,0.0,True,True,242.77707735640334
+feasibility only,2,10,R208,0,24,0.0,True,True,242.77707735640334
+feasibility only,2,10,R208,1,24,0.0,True,True,242.77707735640337
+feasibility only,2,10,R208,2,24,0.0,True,True,241.54470597826912
+feasibility only,2,10,RC104,0,40,0.0,True,True,224.84153242050854
+feasibility only,2,10,RC104,1,40,0.0,True,True,224.84153242050854
+feasibility only,2,10,RC104,2,40,0.0,True,True,224.84153242050854
+feasibility only,2,10,RC108,0,40,0.0,True,True,171.99824013889548
+feasibility only,2,10,RC108,1,40,0.0,True,True,171.99824013889548
+feasibility only,2,10,RC108,2,40,0.0,True,True,171.99824013889548
+feasibility only,2,10,RC204,0,24,0.0,True,True,174.67907498016797
+feasibility only,2,10,RC204,1,24,0.0,True,True,209.708033429025
+feasibility only,2,10,RC204,2,24,0.0,True,True,174.67907498016797
+feasibility only,2,10,RC208,0,24,0.0,True,True,205.71480330292906
+feasibility only,2,10,RC208,1,24,0.0,True,True,171.99824013889548
+feasibility only,2,10,RC208,2,24,0.0,True,True,171.9982401388955
+feasibility only,2,20,C104,0,128,0.0,True,True,300.7813223494723
+feasibility only,2,20,C104,1,128,0.0,True,True,274.3817946920785
+feasibility only,2,20,C104,2,128,0.0,True,True,282.90647161805197
+feasibility only,2,20,C108,0,176,0.0,True,True,350.2540402732203
+feasibility only,2,20,C108,1,176,1.0,False,True,350.0487748979459
+feasibility only,2,20,C108,2,176,0.0,True,True,278.57710012401105
+feasibility only,2,20,C204,0,144,0.0,True,True,381.9905375275426
+feasibility only,2,20,C204,1,144,1.0,False,True,383.46957789062714
+feasibility only,2,20,C204,2,144,0.0,True,True,391.17019770364874
+feasibility only,2,20,C208,0,96,0.0,True,True,314.00962688123013
+feasibility only,2,20,C208,1,96,0.0,True,True,319.944940199798
+feasibility only,2,20,C208,2,96,0.0,True,True,340.0926509845154
+feasibility only,2,20,R104,0,176,1.0,False,False,433.983560548863
+feasibility only,2,20,R104,1,176,2.0,False,False,458.5466664014639
+feasibility only,2,20,R104,2,176,1.0,False,False,431.92225230525077
+feasibility only,2,20,R108,0,128,1.0,False,False,462.0275524139302
+feasibility only,2,20,R108,1,128,0.0,True,False,468.9947235270623
+feasibility only,2,20,R108,2,128,0.0,True,True,448.8700975518095
+feasibility only,2,20,R112,0,176,1.0,False,True,465.0539631776982
+feasibility only,2,20,R112,1,176,1.0,False,False,477.5782361340245
+feasibility only,2,20,R112,2,176,2.0,False,True,494.035583053431
+feasibility only,2,20,R204,0,96,0.0,True,True,524.956868479628
+feasibility only,2,20,R204,1,96,0.0,True,True,494.84809530931636
+feasibility only,2,20,R204,2,96,0.0,True,True,500.562758210756
+feasibility only,2,20,R208,0,144,0.0,True,True,483.9820877819941
+feasibility only,2,20,R208,1,144,0.0,True,True,458.3882816028677
+feasibility only,2,20,R208,2,144,0.0,True,True,473.5785838778703
+feasibility only,2,20,RC104,0,176,0.0,True,True,444.3403018823332
+feasibility only,2,20,RC104,1,176,0.0,True,True,396.69534405750295
+feasibility only,2,20,RC104,2,176,2.0,False,True,515.5556922757528
+feasibility only,2,20,RC108,0,176,1.0,False,True,498.29870847220843
+feasibility only,2,20,RC108,1,176,1.0,False,True,471.34761320407773
+feasibility only,2,20,RC108,2,176,1.0,False,True,452.6530149960015
+feasibility only,2,20,RC204,0,96,0.0,True,True,527.134598331771
+feasibility only,2,20,RC204,1,96,0.0,True,True,506.70619240958405
+feasibility only,2,20,RC204,2,96,0.0,True,True,543.3030347691447
+feasibility only,2,20,RC208,0,144,0.0,True,True,490.85934313517237
+feasibility only,2,20,RC208,1,144,0.0,True,True,517.8521720994968
+feasibility only,2,20,RC208,2,144,0.0,True,True,515.697399964965

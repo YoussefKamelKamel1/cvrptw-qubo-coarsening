@@ -3,9 +3,10 @@ __pycache__/
 *.egg-info/
 .ipynb_checkpoints/
 
-# generated outputs; the trained coarsening policy is kept
+# generated outputs; the models, labels and result files used in the paper are committed
 results/*
 !results/gnn_model_rl.pt
+figures/
 
 *.log
 .DS_Store

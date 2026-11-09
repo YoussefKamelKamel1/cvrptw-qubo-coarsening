@@ -17,7 +17,8 @@ simulated-annealing backend, with two contributions:
    stay solvable and embeddable at large `N`.
 
 All experiments run on a classical simulated-annealing sampler and OR-Tools
-serves as a classical reference; no physical quantum hardware is used.
+serves as a classical reference. The hardware runs on a D-Wave Advantage2
+processor use `scripts/run_qpu.py`; their outputs are in `results/qpu_*.csv`.
 
 ## Installation
 
@@ -35,7 +36,8 @@ src/          core library (datasets, coarsening, QUBO, solvers, GNN, metrics)
 scripts/      experiment drivers and reproduction runners
 configs/      YAML configs for the baseline and penalty-ablation runs
 data/         Solomon (CVRPTW) and Christofides (CVRP) benchmark instances
-results/      output directory; ships the trained policy gnn_model_rl.pt
+results/      trained models, training labels and the result files behind the paper
+figures/      created by the make_*.py scripts
 ```
 
 ## Reproducing the results
@@ -56,10 +58,31 @@ python scripts/run_scorer_ablation.py  # learned vs. fixed merge score
 python scripts/run_repair_only.py       # classical repair baseline
 python scripts/run_local_search.py      # shared local-search polish
 python scripts/run_scaling_large.py     # QUBO size and feasibility vs. N
+
+# robustness
+python scripts/run_penalty_larger_n.py  # penalty comparison at N = 20, 40
+python scripts/run_sa_schedule.py       # SA temperature range for static penalties
+python scripts/run_lofo.py train && python scripts/run_lofo.py eval   # leave-one-family-out
+python scripts/compare_architectures.py # GraphSAGE vs. GAT vs. GCN
+python scripts/gen_labels_cached.py && python scripts/sweep_reward.py  # reward weights
+python scripts/analyze_robustness.py
+
+# figures (written to figures/)
+python scripts/make_method_figures.py
+python scripts/make_paper_data_figures.py
+python scripts/make_confound_figure.py
+python scripts/make_phase4_figures.py
+python scripts/make_learned_stop_figure.py
+python scripts/make_qpu_figures.py
 ```
 
-A pre-trained coarsening policy is provided at `results/gnn_model_rl.pt`, so the
-evaluation and scaling scripts can be run without retraining.
+The trained coarsening policy is provided at `results/gnn_model_rl.pt`, so the
+evaluation and scaling scripts can be run without retraining. The multi-size model
+whose rollouts produced its expert-iteration labels (`results/gnn_model_multiN.pt`)
+and the training labels
+(`results/gnn_labels_*.pt`) are included as well. All result files used for the
+figures and tables are in `results/`, so the figure scripts run without
+re-running the experiments.
 
 ## Solver backend
 

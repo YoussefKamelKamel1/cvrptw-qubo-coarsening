@@ -1,0 +1,10 @@
+N,coarsen,vars,feasible_pct
+10,none,110.0,94.4
+10,heuristic,23.3,83.3
+10,gnn,27.3,100.0
+15,none,240.0,83.3
+15,heuristic,40.3,72.2
+15,gnn,44.3,50.0
+20,none,420.0,66.7
+20,heuristic,59.0,38.9
+20,gnn,75.3,55.6
