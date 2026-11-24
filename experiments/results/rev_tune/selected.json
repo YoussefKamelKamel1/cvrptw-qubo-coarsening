@@ -1,0 +1,506 @@
+{
+ "free|10|C1": {
+  "alpha": 1.0,
+  "beta": 0.6,
+  "P": 0.4,
+  "radiusCoeff": 2.0
+ },
+ "free|10|C2": {
+  "alpha": 1.0,
+  "beta": 0.3,
+  "P": 0.4,
+  "radiusCoeff": 1.0
+ },
+ "free|10|R2": {
+  "alpha": 1.0,
+  "beta": 0.6,
+  "P": 0.4,
+  "radiusCoeff": 2.0
+ },
+ "free|10|RC2": {
+  "alpha": 1.0,
+  "beta": 1.5,
+  "P": 0.4,
+  "radiusCoeff": 2.0
+ },
+ "free|20|R2": {
+  "alpha": 1.0,
+  "beta": 0.3,
+  "P": 0.4,
+  "radiusCoeff": 2.0
+ },
+ "free|10|RC1": {
+  "alpha": 1.0,
+  "beta": 1.5,
+  "P": 0.7,
+  "radiusCoeff": 2.0
+ },
+ "free|20|C2": {
+  "alpha": 1.0,
+  "beta": 0.3,
+  "P": 0.4,
+  "radiusCoeff": 2.0
+ },
+ "free|20|RC2": {
+  "alpha": 1.0,
+  "beta": 1.0,
+  "P": 0.4,
+  "radiusCoeff": 2.0
+ },
+ "free|20|C1": {
+  "alpha": 1.0,
+  "beta": 0.6,
+  "P": 0.4,
+  "radiusCoeff": 0.5
+ },
+ "free|40|R2": {
+  "alpha": 1.0,
+  "beta": 0.3,
+  "P": 0.4,
+  "radiusCoeff": 1.0
+ },
+ "free|20|RC1": {
+  "alpha": 1.0,
+  "beta": 0.3,
+  "P": 0.7,
+  "radiusCoeff": 2.0
+ },
+ "free|40|RC2": {
+  "alpha": 1.0,
+  "beta": 0.6,
+  "P": 0.4,
+  "radiusCoeff": 2.0
+ },
+ "free|40|C2": {
+  "alpha": 1.0,
+  "beta": 0.3,
+  "P": 0.4,
+  "radiusCoeff": 0.5
+ },
+ "free|50|R2": {
+  "alpha": 1.0,
+  "beta": 1.5,
+  "P": 0.4,
+  "radiusCoeff": 2.0
+ },
+ "free|50|C2": {
+  "alpha": 1.0,
+  "beta": 0.3,
+  "P": 0.4,
+  "radiusCoeff": 0.5
+ },
+ "free|50|RC2": {
+  "alpha": 1.0,
+  "beta": 0.6,
+  "P": 0.4,
+  "radiusCoeff": 1.0
+ },
+ "free|40|C1": {
+  "alpha": 1.0,
+  "beta": 0.3,
+  "P": 0.5,
+  "radiusCoeff": 0.5
+ },
+ "free|60|R2": {
+  "alpha": 1.0,
+  "beta": 0.3,
+  "P": 0.4,
+  "radiusCoeff": 1.0
+ },
+ "free|60|C2": {
+  "alpha": 1.0,
+  "beta": 0.3,
+  "P": 0.4,
+  "radiusCoeff": 2.0
+ },
+ "free|50|C1": {
+  "alpha": 1.0,
+  "beta": 0.6,
+  "P": 0.5,
+  "radiusCoeff": 0.5
+ },
+ "free|60|RC2": {
+  "alpha": 1.0,
+  "beta": 1.0,
+  "P": 0.4,
+  "radiusCoeff": 2.0
+ },
+ "free|60|C1": {
+  "alpha": 1.0,
+  "beta": 0.3,
+  "P": 0.5,
+  "radiusCoeff": 0.5
+ },
+ "free|40|RC1": {
+  "alpha": 1.0,
+  "beta": 1.5,
+  "P": 0.7,
+  "radiusCoeff": 1.0
+ },
+ "free|80|RC2": {
+  "alpha": 1.0,
+  "beta": 0.6,
+  "P": 0.4,
+  "radiusCoeff": 2.0
+ },
+ "free|80|C2": {
+  "alpha": 1.0,
+  "beta": 0.6,
+  "P": 0.4,
+  "radiusCoeff": 2.0
+ },
+ "free|80|R2": {
+  "alpha": 1.0,
+  "beta": 1.0,
+  "P": 0.4,
+  "radiusCoeff": 0.5
+ },
+ "free|50|RC1": {
+  "alpha": 1.0,
+  "beta": 0.3,
+  "P": 0.7,
+  "radiusCoeff": 1.0
+ },
+ "free|100|RC2": {
+  "alpha": 1.0,
+  "beta": 1.0,
+  "P": 0.4,
+  "radiusCoeff": 2.0
+ },
+ "free|100|C2": {
+  "alpha": 1.0,
+  "beta": 1.0,
+  "P": 0.4,
+  "radiusCoeff": 2.0
+ },
+ "free|80|C1": {
+  "alpha": 1.0,
+  "beta": 0.3,
+  "P": 0.4,
+  "radiusCoeff": 0.5
+ },
+ "free|100|R2": {
+  "alpha": 1.0,
+  "beta": 1.5,
+  "P": 0.4,
+  "radiusCoeff": 2.0
+ },
+ "free|100|C1": {
+  "alpha": 1.0,
+  "beta": 1.0,
+  "P": 0.5,
+  "radiusCoeff": 0.5
+ },
+ "free|80|RC1": {
+  "alpha": 1.0,
+  "beta": 0.3,
+  "P": 0.7,
+  "radiusCoeff": 0.5
+ },
+ "free|10|R1": {
+  "alpha": 1.0,
+  "beta": 0.3,
+  "P": 0.4,
+  "radiusCoeff": 0.5
+ },
+ "free|60|RC1": {
+  "alpha": 1.0,
+  "beta": 1.0,
+  "P": 0.7,
+  "radiusCoeff": 1.0
+ },
+ "free|40|R1": {
+  "alpha": 1.0,
+  "beta": 0.3,
+  "P": 0.7,
+  "radiusCoeff": 0.5
+ },
+ "free|50|R1": {
+  "alpha": 1.0,
+  "beta": 0.6,
+  "P": 0.7,
+  "radiusCoeff": 0.5
+ },
+ "free|60|R1": {
+  "alpha": 1.0,
+  "beta": 0.6,
+  "P": 0.7,
+  "radiusCoeff": 2.0
+ },
+ "free|100|RC1": {
+  "alpha": 1.0,
+  "beta": 0.6,
+  "P": 0.7,
+  "radiusCoeff": 1.0
+ },
+ "free|100|R1": {
+  "alpha": 1.0,
+  "beta": 0.3,
+  "P": 0.7,
+  "radiusCoeff": 0.5
+ },
+ "free|20|R1": {
+  "alpha": 1.0,
+  "beta": 1.0,
+  "P": 0.7,
+  "radiusCoeff": 2.0
+ },
+ "free|80|R1": {
+  "alpha": 1.0,
+  "beta": 0.6,
+  "P": 0.7,
+  "radiusCoeff": 0.5
+ },
+ "P0.5|10|C1": {
+  "alpha": 1.0,
+  "beta": 0.3,
+  "P": 0.5,
+  "radiusCoeff": 1.0
+ },
+ "P0.5|10|C2": {
+  "alpha": 1.0,
+  "beta": 0.3,
+  "P": 0.5,
+  "radiusCoeff": 1.0
+ },
+ "P0.5|10|R2": {
+  "alpha": 1.0,
+  "beta": 0.6,
+  "P": 0.5,
+  "radiusCoeff": 2.0
+ },
+ "P0.5|10|RC2": {
+  "alpha": 1.0,
+  "beta": 0.3,
+  "P": 0.5,
+  "radiusCoeff": 2.0
+ },
+ "P0.5|20|C2": {
+  "alpha": 1.0,
+  "beta": 0.6,
+  "P": 0.5,
+  "radiusCoeff": 2.0
+ },
+ "P0.5|20|R2": {
+  "alpha": 1.0,
+  "beta": 0.6,
+  "P": 0.5,
+  "radiusCoeff": 2.0
+ },
+ "P0.5|20|RC2": {
+  "alpha": 1.0,
+  "beta": 1.0,
+  "P": 0.5,
+  "radiusCoeff": 2.0
+ },
+ "P0.5|20|C1": {
+  "alpha": 1.0,
+  "beta": 1.5,
+  "P": 0.5,
+  "radiusCoeff": 2.0
+ },
+ "P0.5|40|RC2": {
+  "alpha": 1.0,
+  "beta": 0.6,
+  "P": 0.5,
+  "radiusCoeff": 2.0
+ },
+ "P0.5|40|R2": {
+  "alpha": 1.0,
+  "beta": 1.5,
+  "P": 0.5,
+  "radiusCoeff": 2.0
+ },
+ "P0.5|40|C2": {
+  "alpha": 1.0,
+  "beta": 0.3,
+  "P": 0.5,
+  "radiusCoeff": 2.0
+ },
+ "P0.5|50|RC2": {
+  "alpha": 1.0,
+  "beta": 0.6,
+  "P": 0.5,
+  "radiusCoeff": 2.0
+ },
+ "P0.5|50|R2": {
+  "alpha": 1.0,
+  "beta": 1.5,
+  "P": 0.5,
+  "radiusCoeff": 2.0
+ },
+ "P0.5|40|C1": {
+  "alpha": 1.0,
+  "beta": 0.3,
+  "P": 0.5,
+  "radiusCoeff": 0.5
+ },
+ "P0.5|50|C2": {
+  "alpha": 1.0,
+  "beta": 0.3,
+  "P": 0.5,
+  "radiusCoeff": 2.0
+ },
+ "P0.5|60|C2": {
+  "alpha": 1.0,
+  "beta": 0.3,
+  "P": 0.5,
+  "radiusCoeff": 2.0
+ },
+ "P0.5|50|C1": {
+  "alpha": 1.0,
+  "beta": 0.6,
+  "P": 0.5,
+  "radiusCoeff": 0.5
+ },
+ "P0.5|60|RC2": {
+  "alpha": 1.0,
+  "beta": 1.0,
+  "P": 0.5,
+  "radiusCoeff": 2.0
+ },
+ "P0.5|60|R2": {
+  "alpha": 1.0,
+  "beta": 0.6,
+  "P": 0.5,
+  "radiusCoeff": 2.0
+ },
+ "P0.5|60|C1": {
+  "alpha": 1.0,
+  "beta": 0.3,
+  "P": 0.5,
+  "radiusCoeff": 0.5
+ },
+ "P0.5|80|RC2": {
+  "alpha": 1.0,
+  "beta": 0.6,
+  "P": 0.5,
+  "radiusCoeff": 2.0
+ },
+ "P0.5|80|C2": {
+  "alpha": 1.0,
+  "beta": 0.6,
+  "P": 0.5,
+  "radiusCoeff": 2.0
+ },
+ "P0.5|80|R2": {
+  "alpha": 1.0,
+  "beta": 0.3,
+  "P": 0.5,
+  "radiusCoeff": 2.0
+ },
+ "P0.5|100|RC2": {
+  "alpha": 1.0,
+  "beta": 1.0,
+  "P": 0.5,
+  "radiusCoeff": 2.0
+ },
+ "P0.5|100|C2": {
+  "alpha": 1.0,
+  "beta": 1.0,
+  "P": 0.5,
+  "radiusCoeff": 2.0
+ },
+ "P0.5|80|C1": {
+  "alpha": 1.0,
+  "beta": 0.3,
+  "P": 0.5,
+  "radiusCoeff": 0.5
+ },
+ "P0.5|100|R2": {
+  "alpha": 1.0,
+  "beta": 1.5,
+  "P": 0.5,
+  "radiusCoeff": 2.0
+ },
+ "P0.5|100|C1": {
+  "alpha": 1.0,
+  "beta": 1.0,
+  "P": 0.5,
+  "radiusCoeff": 0.5
+ },
+ "P0.5|10|R1": {
+  "alpha": 1.0,
+  "beta": 0.3,
+  "P": 0.5,
+  "radiusCoeff": 0.5
+ },
+ "P0.5|20|RC1": {
+  "alpha": 1.0,
+  "beta": 0.3,
+  "P": 0.5,
+  "radiusCoeff": 1.0
+ },
+ "P0.5|10|RC1": {
+  "alpha": 1.0,
+  "beta": 0.6,
+  "P": 0.5,
+  "radiusCoeff": 1.0
+ },
+ "P0.5|40|RC1": {
+  "alpha": 1.0,
+  "beta": 0.3,
+  "P": 0.5,
+  "radiusCoeff": 0.5
+ },
+ "P0.5|50|RC1": {
+  "alpha": 1.0,
+  "beta": 1.5,
+  "P": 0.5,
+  "radiusCoeff": 0.5
+ },
+ "P0.5|60|RC1": {
+  "alpha": 1.0,
+  "beta": 1.0,
+  "P": 0.5,
+  "radiusCoeff": 0.5
+ },
+ "P0.5|20|R1": {
+  "alpha": 1.0,
+  "beta": 0.3,
+  "P": 0.5,
+  "radiusCoeff": 0.5
+ },
+ "P0.5|60|R1": {
+  "alpha": 1.0,
+  "beta": 1.0,
+  "P": 0.5,
+  "radiusCoeff": 0.5
+ },
+ "P0.5|80|RC1": {
+  "alpha": 1.0,
+  "beta": 1.5,
+  "P": 0.5,
+  "radiusCoeff": 0.5
+ },
+ "P0.5|40|R1": {
+  "alpha": 1.0,
+  "beta": 1.5,
+  "P": 0.5,
+  "radiusCoeff": 0.5
+ },
+ "P0.5|50|R1": {
+  "alpha": 1.0,
+  "beta": 1.5,
+  "P": 0.5,
+  "radiusCoeff": 0.5
+ },
+ "P0.5|100|R1": {
+  "alpha": 1.0,
+  "beta": 1.0,
+  "P": 0.5,
+  "radiusCoeff": 0.5
+ },
+ "P0.5|80|R1": {
+  "alpha": 1.0,
+  "beta": 0.3,
+  "P": 0.5,
+  "radiusCoeff": 2.0
+ },
+ "P0.5|100|RC1": {
+  "alpha": 1.0,
+  "beta": 0.3,
+  "P": 0.5,
+  "radiusCoeff": 2.0
+ }
+}

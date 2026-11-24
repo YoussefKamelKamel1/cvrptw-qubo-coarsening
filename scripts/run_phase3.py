@@ -138,7 +138,7 @@ def _summary(df) -> None:
 
     print("\n" + "=" * 72)
     print("PRE-REPAIR feasibility % by N x condition  (isolates raw SA/QUBO quality)")
-    print("   — this is where coarsening should help: smaller QUBOs SA can solve raw")
+    print("   coarsening should help here: SA can solve the smaller QUBOs directly")
     print("=" * 72)
     pre = (df.groupby(["N", "condition"])["pre_feasible"].mean().mul(100).round(1)
            .unstack("condition")[order])

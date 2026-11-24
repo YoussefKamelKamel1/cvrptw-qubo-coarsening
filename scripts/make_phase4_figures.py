@@ -19,7 +19,7 @@ plt.rcParams.update({"figure.dpi": 120, "savefig.bbox": "tight", "font.size": 11
 C = {"none": "#7f7f7f", "heuristic": "#1f77b4", "heuristic_fixed": "#2ca02c",
      "gnn": "#d62728"}
 LAB = {"none": "no coarsening", "heuristic": "heuristic (per-family tuned)",
-       "heuristic_fixed": "heuristic (fixed, untuned)", "gnn": "GNN (learned, ours)"}
+       "heuristic_fixed": "heuristic-fixed (same settings as GNN)", "gnn": "GNN (learned, ours)"}
 
 
 def fig_vars():
@@ -40,14 +40,22 @@ def fig_vars():
     print("wrote fig_scaling_vars")
 
 
+REV_RUNS = ROOT / "experiments" / "results" / "solomon_stored_rank_fixed" / "runs.csv"
+
+
 def fig_feas():
-    frames = []
-    for f in ["scorer_ablation.csv", "scaling_large_solve.csv", "scaling_100_solve.csv"]:
-        p = ROOT / "results" / f
-        if p.exists():
-            frames.append(pd.read_csv(p)[["instance", "N", "seed", "condition", "is_feasible"]])
-    df = pd.concat(frames, ignore_index=True).drop_duplicates(
-        ["instance", "N", "seed", "condition"])
+    if REV_RUNS.exists():
+        # corrected runs (C104 fixed, rank tie-break), the same runs as the feasibility table
+        df = pd.read_csv(REV_RUNS).rename(
+            columns={"arm": "condition", "final_feasible": "is_feasible"})
+    else:
+        frames = []
+        for f in ["scorer_ablation.csv", "scaling_large_solve.csv", "scaling_100_solve.csv"]:
+            p = ROOT / "results" / f
+            if p.exists():
+                frames.append(pd.read_csv(p)[["instance", "N", "seed", "condition", "is_feasible"]])
+        df = pd.concat(frames, ignore_index=True).drop_duplicates(
+            ["instance", "N", "seed", "condition"])
     agg = (df.groupby(["N", "condition"])["is_feasible"].mean().mul(100)
            .unstack("condition"))
     fig, ax = plt.subplots(figsize=(6.2, 4.2))
@@ -55,7 +63,7 @@ def fig_feas():
         if c in agg:
             ax.plot(agg.index, agg[c], "o-", color=C[c], label=LAB[c])
     ax.set_xlabel("customers $N$")
-    ax.set_ylabel("coarsened feasibility (%)")
+    ax.set_ylabel("final feasibility (%)")
     ax.set_title("Feasibility-preserving coarsening")
     ax.legend(fontsize=9)
     fig.savefig(OUT / "fig_feasibility_scaling.pdf")

@@ -12,3 +12,8 @@ figures/
 .DS_Store
 .vscode/
 .idea/
+
+# instance data from external sources (see README)
+experiments/data_gh/
+experiments/data_gh400/
+experiments/data_euro/raw/

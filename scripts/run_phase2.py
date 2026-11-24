@@ -86,13 +86,13 @@ def _wilcoxon(df) -> None:
         return
     s, a = piv["static"].to_numpy(), piv["adaptive"].to_numpy()
     print("=" * 72)
-    print("PAIRED WILCOXON — pre-repair violations (static vs adaptive)")
+    print("PAIRED WILCOXON: pre-repair violations (static vs adaptive)")
     print("=" * 72)
     print(f"  paired samples: {len(s)}")
     print(f"  mean static={s.mean():.2f}  mean adaptive={a.mean():.2f}  "
           f"mean reduction={s.mean()-a.mean():.2f}")
     if (s == a).all():
-        print("  all pairs equal — test not applicable")
+        print("  all pairs equal; test not applicable")
         return
     try:
         stat, p = wilcoxon(s, a, alternative="greater")  # H1: static > adaptive

@@ -1,0 +1,27 @@
+{
+ "r1_seed0": {
+  "ckpt": "v2/r1_seed0/ep150.pt",
+  "val_feas": 0.7222222222222222,
+  "val_vars": 592.0
+ },
+ "r1_seed1": {
+  "ckpt": "v2/r1_seed1/ep075.pt",
+  "val_feas": 0.7222222222222222,
+  "val_vars": 584.4444444444445
+ },
+ "r1_seed2": {
+  "ckpt": "v2/r1_seed2/ep200.pt",
+  "val_feas": 0.7222222222222222,
+  "val_vars": 567.8888888888889
+ },
+ "r1_seed3": {
+  "ckpt": "v2/r1_seed3/ep050.pt",
+  "val_feas": 0.75,
+  "val_vars": 605.4444444444445
+ },
+ "r1_seed4": {
+  "ckpt": "v2/r1_seed4/ep275.pt",
+  "val_feas": 0.7222222222222222,
+  "val_vars": 558.5555555555555
+ }
+}

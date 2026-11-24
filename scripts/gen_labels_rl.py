@@ -35,7 +35,7 @@ from src.experiment import solve_on_graph                                       
 from src.gnn_coarsening import GNNCoarsener, build_features, load_model          # noqa: E402
 from src.solvers import SolverConfig                                            # noqa: E402
 
-# heuristic sweep (as in gen_labels) — guarantees the oracle is >= best heuristic
+# heuristic sweep (as in gen_labels), so the oracle is at least as good as the best heuristic
 SWEEP = [
     {"alpha": 1.0, "beta": 1.0, "P": 0.5, "radiusCoeff": 2.0},
     {"alpha": 1.0, "beta": 0.6, "P": 0.4, "radiusCoeff": 0.5},

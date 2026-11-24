@@ -55,7 +55,7 @@ def _summary(df) -> None:
     pd.set_option("display.max_columns", 30)
 
     print("\n" + "=" * 70)
-    print("VALIDITY (should be ~100% across the board — quantum tier)")
+    print("VALIDITY (should be about 100% everywhere, quantum tier)")
     print("=" * 70)
     val = df.groupby(["N", "condition", "solver"])["is_valid"].mean().mul(100).round(1)
     print(val.to_string())

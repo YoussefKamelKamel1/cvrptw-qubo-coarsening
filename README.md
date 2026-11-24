@@ -37,6 +37,7 @@ scripts/      experiment drivers and reproduction runners
 configs/      YAML configs for the baseline and penalty-ablation runs
 data/         Solomon (CVRPTW) and Christofides (CVRP) benchmark instances
 results/      trained models, training labels and the result files behind the paper
+experiments/  additional experiments, their result files and trained models
 figures/      created by the make_*.py scripts
 ```
 
@@ -83,6 +84,49 @@ and the training labels
 (`results/gnn_labels_*.pt`) are included as well. All result files used for the
 figures and tables are in `results/`, so the figure scripts run without
 re-running the experiments.
+
+## Additional experiments
+
+`experiments/` holds the runs added in the revision: the Gehring-Homberger and EURO
+Meets NeurIPS 2022 benchmarks, the five retrained scorers, the re-tuned and label-free
+heuristics, penalty sensitivity, roof duality, route cost and running time up to
+N = 100, the improved training, the selection among candidate coarsenings, and the
+cost-gap diagnosis. Their result files and trained models are in
+`experiments/results/`; each script states at the top what it does and how to run it.
+
+```bash
+# coarsener comparison with per-run traces (Solomon, Gehring-Homberger, EURO)
+python experiments/review_runner.py --dataset solomon --scoring stored --tiebreak rank --c104 fixed
+python experiments/review_runner.py --dataset gh --scoring stored --tiebreak rank
+python experiments/review_runner.py --dataset euro --scoring stored --tiebreak rank --arms heuristic_fixed gnn
+python experiments/fullcheck_repair.py experiments/results/<tag>/traces.jsonl <dataset> <out.csv>
+
+# additional comparisons (re-tuned and label-free heuristics, retrained models, trunks)
+python experiments/retrain_sage.py --arch sage --seeds 0 1 2 3 4
+python experiments/rev_runner.py tune
+python experiments/rev_runner.py test
+python experiments/rev_runner.py nolabel
+python experiments/rev_runner.py retrain
+
+# penalty sensitivity, roof duality, OR-Tools reference, cost and time
+python experiments/penalty_sensitivity.py
+python experiments/reduction_compare.py
+python experiments/ortools_ref_test.py
+python experiments/analyze_cost_time.py
+
+# improved training, then selection among candidate coarsenings
+bash experiments/run_v2.sh
+python experiments/v3_data.py && python experiments/v3_train.py
+python experiments/v3_test.py --dataset solomon --capped
+```
+
+The Gehring-Homberger and EURO instances are not included. Extract the
+Gehring-Homberger 200- and 400-customer instance files (`C1_2_1.TXT`, ...) into
+`experiments/data_gh/extracted/` and `experiments/data_gh400/extracted/`, and place
+the EURO instance files from
+github.com/ortec/euro-neurips-vrp-2022-quickstart (CC BY-NC 4.0) in
+`experiments/data_euro/raw/`. The lists of EURO instances used are in
+`experiments/data_euro/`.
 
 ## Solver backend
 

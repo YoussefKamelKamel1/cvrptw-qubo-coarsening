@@ -41,14 +41,14 @@ def baseline():
     feas = d.groupby(["family_group", "condition"]).is_feasible.mean().mul(100).unstack("condition")
     fig, ax = plt.subplots(figsize=(5.5, 3.6))
     feas[["none", "heuristic"]].plot.bar(ax=ax, color=["#7f7f7f", "#1f77b4"])
-    ax.set_ylabel("feasibility (%)"); ax.set_ylim(0, 105); ax.set_xlabel("Solomon family")
+    ax.set_ylabel("feasibility (%)"); ax.set_ylim(0, 105); ax.set_xlabel("Solomon class (C, R, RC)")
     ax.legend(["no coarsening", "heuristic coarsening"], fontsize=8)
     save(fig, "fig_phase1_feasibility")
 
     v = d.groupby(["family_group", "condition"]).num_qubo_vars.mean().unstack("condition")
     fig, ax = plt.subplots(figsize=(5.5, 3.6))
     v[["none", "heuristic"]].plot.bar(ax=ax, color=["#7f7f7f", "#1f77b4"])
-    ax.set_ylabel("mean QUBO variables"); ax.set_xlabel("Solomon family")
+    ax.set_ylabel("mean QUBO variables"); ax.set_xlabel("Solomon class (C, R, RC)")
     ax.legend(["no coarsening", "heuristic coarsening"], fontsize=8)
     save(fig, "fig_phase1_qubovars")
 
@@ -59,7 +59,7 @@ def penalties():
     pv = d.groupby(["family_group", "penalty_mode"]).pre_total_viol.mean().unstack("penalty_mode")
     fig, ax = plt.subplots(figsize=(5.5, 3.6))
     pv[["static", "adaptive"]].plot.bar(ax=ax, color=["#ff7f0e", "#1f77b4"])
-    ax.set_ylabel("mean pre-repair violations"); ax.set_xlabel("Solomon family"); ax.legend(fontsize=9)
+    ax.set_ylabel("mean pre-repair violations"); ax.set_xlabel("Solomon class (C, R, RC)"); ax.legend(fontsize=9)
     # adaptive lands near zero on a 0-35 axis; label values so the bars are not
     # mistaken for missing data
     ax.set_ylim(0, pv[["static", "adaptive"]].to_numpy().max() * 1.42)
@@ -71,7 +71,7 @@ def penalties():
     fig, ax = plt.subplots(figsize=(5.5, 3.6))
     fe[["static", "adaptive"]].plot.bar(ax=ax, color=["#ff7f0e", "#1f77b4"])
     ax.set_ylabel("post-repair feasibility (%)"); ax.set_ylim(0, 105)
-    ax.set_xlabel("Solomon family"); ax.legend(fontsize=9)
+    ax.set_xlabel("Solomon class (C, R, RC)"); ax.legend(fontsize=9)
     save(fig, "fig_phase2_feasibility")
     print("  phase2 check: pre-viol static=%.1f adaptive=%.1f" %
           (d[d.penalty_mode == "static"].pre_total_viol.mean(),
@@ -106,7 +106,7 @@ def n10_feasibility():
           .unstack("condition")[order])
     fig, ax = plt.subplots(figsize=(6.5, 3.8))
     ft.plot.bar(ax=ax, color=[CC[c] for c in order])
-    ax.set_ylabel("feasibility (%)"); ax.set_ylim(0, 108); ax.set_xlabel("Solomon family")
+    ax.set_ylabel("feasibility (%)"); ax.set_ylim(0, 108); ax.set_xlabel("Solomon class (C, R, RC)")
     ax.legend([CL[c] for c in order], fontsize=7)
     save(fig, "fig_phase3_feasibility")
     print("  N=10 R-type feasibility:", ft.loc["R"].round(0).to_dict() if "R" in ft.index else "n/a")

@@ -1,23 +1,28 @@
-numpy<2
-pandas
-scipy
-matplotlib
-networkx
-tqdm
-pyyaml
+# tested with Python 3.11
+numpy==1.26.4
+pandas==2.3.3
+scipy==1.16.3
+matplotlib==3.10.7
+networkx==3.6.1
+tqdm==4.67.1
+pyyaml==6.0.3
 
 # QUBO / simulated-annealing backend
 dimod==0.12.22
 dwave-samplers==1.8.0
+# roof duality (experiments/reduction_compare.py)
+dwave-preprocessing==0.6.11
 
 # offline minor-embedding study (scripts/embeddability.py)
 # 0.2.21 is the last minorminer that keeps numpy<2
 minorminer==0.2.21
-dwave-networkx
+dwave-networkx==0.8.19
 
-# classical reference solver (CP-SAT)
+# classical reference solver (routing library, guided local search)
 ortools==9.12.4544
 
 # graph neural network (install a torch build matching your CUDA/CPU first)
 torch==2.2.2
 torch-geometric==2.8.0
+# validation AUC in scripts/train_gnn.py and scripts/compare_architectures.py
+scikit-learn==1.7.1

@@ -1,0 +1,59 @@
+{
+  "tag": "solomon_stored_rank_fixed",
+  "command": "python.exe explore/review_runner.py --dataset solomon --scoring stored --tiebreak rank --c104 fixed",
+  "args": {
+    "dataset": "solomon",
+    "scoring": "stored",
+    "tiebreak": "rank",
+    "c104": "fixed",
+    "sizes": [
+      10,
+      20,
+      40,
+      50,
+      60,
+      80,
+      100
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "instances": null,
+    "workers": 3,
+    "tag": null
+  },
+  "n_jobs": 819,
+  "git_commit": "a82c9e30762dc586f537219ac03cc895d12a2c73",
+  "git_tracked_changes": "",
+  "file_sha256": {
+    "explore\\review_runner.py": "d216b8d51726ad2f31233afaf75fefe2c6a5173e08acfaf5f19b788d311270d2",
+    "src\\coarsening.py": "0e46bd4b5bb6ad5cfb6d9e23e173f493c4eba94dfb4d75a87a109b2f019cbd9b",
+    "src\\gnn_coarsening.py": "985b4998a4901c06ae013fba72ef3dcf8b04b7cc791c5bb20c47137420c476c2",
+    "src\\experiment.py": "17dc291ee9023d3cab269dd6d4102ccab1bde3242e3cb5b2856f64307562fc3c",
+    "src\\solvers.py": "96c1f26612176a46c55dabcaa9a0780ec4ca7ec3815d2f0ebf8768e8ab9f9d92",
+    "src\\qubo.py": "db059874e3e5a1cd4bd109d24ceb4d3f674ce2df193254b45532590d1f69a46e",
+    "src\\metrics.py": "754a68bdf73697711d83bc5c210f9c67d8c8bcd495b2184f946ac411aa8aff29",
+    "src\\datasets.py": "1363b19998f6403fcbb7a9dea275dae9bfa5aa57582f56d98aabab544b6c5454",
+    "src\\runner_parallel.py": "529e3526684058a6e5cffa4f31f2e872846cf86f862545582062dbdd86398460",
+    "results\\gnn_model_rl.pt": "f0c1958f3b1222722a9ea5f06cc2e5cabee7980ebf9626287ce27eb6bb1745b7"
+  },
+  "python": "3.11.14 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 18:30:03) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "packages": {
+    "numpy": "1.26.4",
+    "torch": "2.2.2+cu118",
+    "torch_geometric": "2.8.0",
+    "dwave.samplers": "1.8.0",
+    "ortools": "9.12.4544",
+    "pandas": "2.3.3"
+  },
+  "PYTHONHASHSEED_workers": "0",
+  "started": "2026-11-03T21:37:51",
+  "resumed_with_done": 0,
+  "finished": "2026-11-03T21:49:34",
+  "runtime_s": 702,
+  "n_records": 819,
+  "complete": true
+}

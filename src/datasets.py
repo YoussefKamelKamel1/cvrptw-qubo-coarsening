@@ -356,7 +356,7 @@ def parse_christofides(text: str, name: Optional[str] = None) -> VRPInstance:
     # nums[2] = max route time, nums[3] = drop/service time (often 0)
     body = nums[4:]
     # depot: x y  (+ possibly demand 0) ; customers: x y demand
-    # Robustly read triples for customers; the depot may have 2 or 3 fields.
+    # Read the customer triples; the depot line may have 2 or 3 fields.
     # Common CMT layout: depot 'x y', then n rows of 'x y demand'.
     depot = body[:2]
     rest = body[2:]
